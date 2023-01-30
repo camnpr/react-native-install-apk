@@ -1,0 +1,26 @@
+{
+  "name": "@isudaji/react-native-install-apk",
+  "version": "1.0.0",
+  "description": "install .apk file (android only)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/camnpr/react-native-install-apk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/camnpr/react-native-install-apk/issues"
+  },
+  "homepage": "https://github.com/camnpr/react-native-install-apk#readme",
+  "keywords": [
+    "expo",
+    "RN",
+    "NativeModules",
+    "android",
+    "install",
+    "apk"
+  ],
+  "license": "MIT"
+}
