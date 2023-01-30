@@ -1,7 +1,11 @@
 # react-native-install-apk(android only)
 
 ## install
-`npm install @camnpr/react-native-install-apk --save`  
+`npm i @isudaji/react-native-install-apk --save`
+
+OR
+
+`yarn add @isudaji/react-native-install-apk`
 
 ## usage  
     import { NativeModules } from 'react-native';  
