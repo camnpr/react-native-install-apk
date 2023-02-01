@@ -1,6 +1,6 @@
 {
   "name": "@isudaji/react-native-install-apk",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "install .apk file (android only)",
   "main": "index.js",
   "scripts": {
