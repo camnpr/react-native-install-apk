@@ -19,5 +19,7 @@ android {
 }
 
 dependencies {
-  compile "com.facebook.react:react-native:+"
+  // compile "com.facebook.react:react-native:+" 
+  // TODO: compile by deprecated on gradle 3.x, please use implementation or api instead it.
+  implementation "com.facebook.react:react-native:+"
 }

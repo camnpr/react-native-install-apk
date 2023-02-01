@@ -1,5 +1,8 @@
 # react-native-install-apk(android only)
 
+[![npm](https://img.shields.io/npm/v/@isudaji/react-native-install-apk.svg?maxAge=3600&style=flat-square)](https://www.npmjs.com/package/@isudaji/react-native-install-apk?_blank)
+[![NPM downloads](https://img.shields.io/npm/dm/@isudaji/react-native-install-apk.svg?style=flat-square)](https://npmjs.org/package/@isudaji/react-native-install-apk)
+
 ## init
 
 `your-app-name`
@@ -24,12 +27,12 @@ AND
   - Add `new RNSdkInstallPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
     ```
-    include ':react-native-sdk-install'
-    project(':react-native-sdk-install').projectDir = new File(rootProject.projectDir,   '../node_modules/react-native-sdk-install/android')
+    include ':react-native-install-apk'
+    project(':react-native-install-apk').projectDir = new File(rootProject.projectDir,   '../node_modules/react-native-install-apk/android')
     ```
-3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
+3. Insert the following lines inside the **dependencies** block in `android/app/build.gradle`:
     ```
-      compile project(':react-native-sdk-install')
+      implementation project(':react-native-install-apk')
     ```
 
 ## usage  
@@ -57,3 +60,15 @@ you can use [react-native-fs](https://github.com/johanneslumpe/react-native-fs) 
 ## publish
 
 `npm publish --access public`
+
+## Report Bug
+
+- `Invariant Violation: requireNativeComponent: "RNSScreen" was not found in the UIManager.`
+
+- `Could not find method compile() for arguments [project ':@isudaji/react-native-install-apk'] on object of type org.gradle.api.internal.artifacts.dsl.dependencies.DefaultDependencyHandler.`
+
+- `The project name '@isudaji/react-native-install-apk' must not contain any of the following characters: [/, \, :, <, >, ", ?, *, |]`
+
+- `Could not find method compile() for arguments [project ':react-native-install-apk'] on object of type org.gradle.api.internal.artifacts.dsl.dependencies.DefaultDependencyHandler.`
+
+- `Could not find method compile() for arguments [com.facebook.react:react-native:+] on object of type org.gradle.api.internal.artifacts.dsl.dependencies.DefaultDependencyHandler.` **gradle 3.x**
