@@ -1,8 +1,12 @@
 {
   "name": "@isudaji/react-native-install-apk",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "install .apk file (android only)",
   "main": "index.js",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
